@@ -1,0 +1,90 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="FormatoAdmin.master.cs" Inherits="Castorcitos.Pages.FormatoAdmin" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>Administrador</title>
+    <!--<link type="text/css" rel="stylesheet" href="../CSS/bootstrap.min.css" />-->
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+    <link type="text/css" rel="stylesheet" href="../CSS/EstiloAdmin.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <!--<script src="../JS/jquery.js"></script>-->
+    <!--<script src="../JS/bootstrap.min.js"></script>-->
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+<body>
+    <form id="form1" runat="server">                
+        <!--A qui Empieza El Navegador-->
+         <nav class="navbar navbar-inverse navbar-fixed-top">
+             <div class="container-fluid">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="Admin.aspx"><span class="glyphicon glyphicon-home"></span>  Home</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                  <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                      <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-pencil"></span>&nbsp;Insertar<span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="Generales.aspx#section2">Seguro Social</a></li>
+                        <li><a href="Generales.aspx#section3">Domicilio</a></li>
+                        <li><a href="Personas.aspx">Persona</a></li>
+                        <li><a href="Generales.aspx#section4">Telefonos</a></li>
+                        <li><a href="Generales.aspx#section1">Imagenes</a></li>
+                        <li><a href="Trabajador.aspx">Trabajadores</a></li>
+                        <li><a href="Hijos.aspx">Hijos</a></li>
+                          <li><a href="Responsable.aspx">Responsables</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-edit"></span>&nbsp;Modificar<span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="Modificar_SS.aspx">Seguro Social</a></li>
+                        <li><a href="Modificar_Domicilio.aspx">Domicilio</a></li>
+                        <li><a href="Modificar_Telefono.aspx">Telefonos</a></li>                        
+                        <li><a href="Trabajadores.aspx">Trabajadores</a></li>
+                        <li><a href="Modificar_Hijos.aspx">Hijos</a></li>
+                        <li><a href="Modificar_Responsables.aspx">Responsables</a></li>                        
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-eye-open"></span>&nbsp;Consultar<span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="MostrarImagenes.aspx">Imagenes</a></li>                        
+                      </ul>
+                    </li>
+                    <li><a href="Eliminar.aspx"><span class="glyphicon glyphicon-trash"></span>&nbsp;Eliminar</a></li>
+                    <li><a href="Credenciales.aspx"><span class="glyphicon glyphicon-credit-card"></span>&nbsp;Credenciales</a></li>
+                    <li><a href="PDF_Generador.aspx"><span class="glyphicon glyphicon-print"></span>&nbsp;PDFs</a></li>
+                    <li><a href="Lectura_Excel.aspx"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;Lectura Excel</a></li>
+                  </ul>
+                  <ul class="nav navbar-nav navbar-right">
+                    <!--<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>-->
+                    <!--<li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>-->                    
+                    <li><asp:Button ID="btnLogaout"  class="btn btn-default btn-lg btn-link" runat="server" Text="Logout" OnClick="btnLogaout_Click" /><span class="glyphicon glyphicon-log-out"></span></li>                                          
+                  </ul>
+                </div>
+            </div>
+        </nav>
+                  
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <asp:Label ID="lblMensaje" runat="server" Text=""></asp:Label>
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>    
+</body>
+</html>

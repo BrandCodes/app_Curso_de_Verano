@@ -1,0 +1,351 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F3D885F3-50D1-482A-BF12-B27591F92A0A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Castorcitos</RootNamespace>
+    <AssemblyName>Castorcitos</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EPPlus, Version=4.1.0.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPPlus.4.1.0\lib\net40\EPPlus.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.1.1.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.xtra, Version=5.1.1.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\itextsharp.xtra.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CSS\EstiloAdmin.css" />
+    <Content Include="CSS\EstiloGenerales.css" />
+    <Content Include="CSS\MiEstilo.css" />
+    <Content Include="IMG\avatar_2x.png" />
+    <Content Include="IMG\bienvenido.gif" />
+    <Content Include="IMG\I-Home.jpg" />
+    <Content Include="JS\from-html.js" />
+    <Content Include="JS\Funciones.js" />
+    <Content Include="JS\GeneradorPDF.js" />
+    <Content Include="JS\jspdf.debug.js" />
+    <Content Include="JS\jspdf.js" />
+    <Content Include="JS\jspdf.min.js" />
+    <Content Include="JS\NuevaVersion.js" />
+    <Content Include="Pages\Admin.aspx" />
+    <Content Include="Pages\Consultar.aspx" />
+    <Content Include="Pages\Credenciales.aspx" />
+    <Content Include="Pages\D_respon.aspx" />
+    <Content Include="Pages\Eliminar.aspx" />
+    <Content Include="Pages\Generales.aspx" />
+    <Content Include="Pages\Guardar.aspx" />
+    <Content Include="Pages\Hijos.aspx" />
+    <Content Include="Pages\Lectura_Excel.aspx" />
+    <Content Include="Pages\Login.aspx" />
+    <Content Include="Pages\Modificar.aspx" />
+    <Content Include="Pages\Modificar_Domicilio.aspx" />
+    <Content Include="Pages\Modificar_Hijos.aspx" />
+    <Content Include="Pages\Modificar_Responsables.aspx" />
+    <Content Include="Pages\Modificar_SS.aspx" />
+    <Content Include="Pages\Modificar_Telefono.aspx" />
+    <Content Include="Pages\Mostrar.aspx" />
+    <Content Include="Pages\MostrarImagenes.aspx" />
+    <Content Include="Pages\MotrarPersona.aspx" />
+    <Content Include="Pages\PDF_Generador.aspx" />
+    <Content Include="Pages\Personas.aspx" />
+    <Content Include="Pages\pruebasSeguroInsertar.aspx" />
+    <Content Include="Pages\Responsable.aspx" />
+    <Content Include="Pages\Trabajador.aspx" />
+    <Content Include="Pages\Trabajadores.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clases\clsMetodos.cs" />
+    <Compile Include="Clases\clsPrincipal.cs" />
+    <Compile Include="Clases\clsVistas.cs" />
+    <Compile Include="Clases\ExcelPackageExtensions.cs" />
+    <Compile Include="Clases\SQL.cs" />
+    <Compile Include="Pages\Admin.aspx.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Admin.aspx.designer.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Consultar.aspx.cs">
+      <DependentUpon>Consultar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Consultar.aspx.designer.cs">
+      <DependentUpon>Consultar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Credenciales.aspx.cs">
+      <DependentUpon>Credenciales.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Credenciales.aspx.designer.cs">
+      <DependentUpon>Credenciales.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\D_respon.aspx.cs">
+      <DependentUpon>D_respon.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\D_respon.aspx.designer.cs">
+      <DependentUpon>D_respon.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Eliminar.aspx.cs">
+      <DependentUpon>Eliminar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Eliminar.aspx.designer.cs">
+      <DependentUpon>Eliminar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\FormatoAdmin.Master.cs">
+      <DependentUpon>FormatoAdmin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\FormatoAdmin.Master.designer.cs">
+      <DependentUpon>FormatoAdmin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Generales.aspx.cs">
+      <DependentUpon>Generales.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Generales.aspx.designer.cs">
+      <DependentUpon>Generales.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Guardar.aspx.cs">
+      <DependentUpon>Guardar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Guardar.aspx.designer.cs">
+      <DependentUpon>Guardar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Hijos.aspx.cs">
+      <DependentUpon>Hijos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Hijos.aspx.designer.cs">
+      <DependentUpon>Hijos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Lectura_Excel.aspx.cs">
+      <DependentUpon>Lectura_Excel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Lectura_Excel.aspx.designer.cs">
+      <DependentUpon>Lectura_Excel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Modificar.aspx.cs">
+      <DependentUpon>Modificar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Modificar.aspx.designer.cs">
+      <DependentUpon>Modificar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Modificar_Domicilio.aspx.cs">
+      <DependentUpon>Modificar_Domicilio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Modificar_Domicilio.aspx.designer.cs">
+      <DependentUpon>Modificar_Domicilio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Modificar_Hijos.aspx.cs">
+      <DependentUpon>Modificar_Hijos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Modificar_Hijos.aspx.designer.cs">
+      <DependentUpon>Modificar_Hijos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Modificar_Responsables.aspx.cs">
+      <DependentUpon>Modificar_Responsables.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Modificar_Responsables.aspx.designer.cs">
+      <DependentUpon>Modificar_Responsables.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Modificar_SS.aspx.cs">
+      <DependentUpon>Modificar_SS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Modificar_SS.aspx.designer.cs">
+      <DependentUpon>Modificar_SS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Modificar_Telefono.aspx.cs">
+      <DependentUpon>Modificar_Telefono.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Modificar_Telefono.aspx.designer.cs">
+      <DependentUpon>Modificar_Telefono.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Mostrar.aspx.cs">
+      <DependentUpon>Mostrar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Mostrar.aspx.designer.cs">
+      <DependentUpon>Mostrar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\MostrarImagenes.aspx.cs">
+      <DependentUpon>MostrarImagenes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\MostrarImagenes.aspx.designer.cs">
+      <DependentUpon>MostrarImagenes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\MotrarPersona.aspx.cs">
+      <DependentUpon>MotrarPersona.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\MotrarPersona.aspx.designer.cs">
+      <DependentUpon>MotrarPersona.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PDF_Generador.aspx.cs">
+      <DependentUpon>PDF_Generador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\PDF_Generador.aspx.designer.cs">
+      <DependentUpon>PDF_Generador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Personas.aspx.cs">
+      <DependentUpon>Personas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Personas.aspx.designer.cs">
+      <DependentUpon>Personas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\pruebasSeguroInsertar.aspx.cs">
+      <DependentUpon>pruebasSeguroInsertar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\pruebasSeguroInsertar.aspx.designer.cs">
+      <DependentUpon>pruebasSeguroInsertar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Responsable.aspx.cs">
+      <DependentUpon>Responsable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Responsable.aspx.designer.cs">
+      <DependentUpon>Responsable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Trabajador.aspx.cs">
+      <DependentUpon>Trabajador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Trabajador.aspx.designer.cs">
+      <DependentUpon>Trabajador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Trabajadores.aspx.cs">
+      <DependentUpon>Trabajadores.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Trabajadores.aspx.designer.cs">
+      <DependentUpon>Trabajadores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Pages\FormatoAdmin.Master" />
+    <Content Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:1111/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

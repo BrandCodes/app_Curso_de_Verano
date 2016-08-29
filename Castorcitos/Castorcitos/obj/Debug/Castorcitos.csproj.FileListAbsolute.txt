@@ -1,0 +1,12 @@
+c:\users\dranz\documents\visual studio 2012\Projects\Castorcitos\Castorcitos\bin\Castorcitos.dll
+c:\users\dranz\documents\visual studio 2012\Projects\Castorcitos\Castorcitos\bin\Castorcitos.pdb
+c:\users\dranz\documents\visual studio 2012\Projects\Castorcitos\Castorcitos\obj\Debug\Castorcitos.csprojResolveAssemblyReference.cache
+c:\users\dranz\documents\visual studio 2012\Projects\Castorcitos\Castorcitos\obj\Debug\Castorcitos.dll
+c:\users\dranz\documents\visual studio 2012\Projects\Castorcitos\Castorcitos\obj\Debug\Castorcitos.pdb
+C:\Users\Brandon\Downloads\Castorcitos 2.0\Castorcitos\Castorcitos\bin\Castorcitos.dll
+C:\Users\Brandon\Downloads\Castorcitos 2.0\Castorcitos\Castorcitos\bin\Castorcitos.pdb
+C:\Users\Brandon\Downloads\Castorcitos 2.0\Castorcitos\Castorcitos\obj\Debug\Castorcitos.csprojResolveAssemblyReference.cache
+C:\Users\Brandon\Downloads\Castorcitos 2.0\Castorcitos\Castorcitos\obj\Debug\Castorcitos.dll
+C:\Users\Brandon\Downloads\Castorcitos 2.0\Castorcitos\Castorcitos\obj\Debug\Castorcitos.pdb
+C:\Users\Brandon\Downloads\Castorcitos 2.0\Castorcitos\Castorcitos\bin\EPPlus.dll
+C:\Users\Brandon\Downloads\Castorcitos 2.0\Castorcitos\Castorcitos\bin\EPPlus.xml

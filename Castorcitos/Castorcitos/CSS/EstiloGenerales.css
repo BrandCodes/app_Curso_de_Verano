@@ -1,0 +1,24 @@
+﻿body {
+      position: relative;
+  }
+  #section1 {padding-top:50px;height:720px;color: #fff; background-color: #DCDCDC;}
+  #section2 {padding-top:50px;height:720px;color: #fff; background-color: #DCDCDC;}
+  #section3 {padding-top:50px;height:720px;color: #fff; background-color: #DCDCDC;}
+  #section4 {padding-top:50px;height:720px;color: #000; background-color: #DCDCDC;}
+  #section42 {padding-top:50px;height:720px;color: #000; background-color: #DCDCDC;}
+
+  #sectionM1 {padding-top:50px;height:720px;color: #404040; background-color: #F5F5F5; }
+  #sectionM2 {padding-top:50px;height:720px;color: #404040; background-color: #F5F5F5; }
+  #sectionM3 {padding-top:50px;height:720px;color: #404040; background-color: #F5F5F5; }
+  #sectionM4 {padding-top:50px;height:720px;color: #404040; background-color: #F5F5F5; }
+  #sectionM5 {padding-top:50px;height:720px;color: #404040; background-color: #F5F5F5; }
+  #sectionM6 {padding-top:50px;height:720px;color: #404040; background-color: #F5F5F5; }
+
+
+#cabeceras {
+    align-content:center;
+}
+
+#formato2 h5{
+    text-align:center;
+}
