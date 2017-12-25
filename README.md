@@ -1,4 +1,5 @@
 # app_Curso_de_Verano
-Un proyecto en construcción para mi Universidad.
+Un sistema de inscripciones para un curso de verano.
 
-... aún esta en construcción, proximamente estará por aquí.
+ASP, JS, C#, css, Bootstrap
+
